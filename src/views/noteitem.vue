@@ -12,7 +12,7 @@
       <!-- 内容 -->
       <p>{{note.title}}</p>
       <div id="article">
-        <mavon-editor v-model="note.content"/>
+        <mavon-editor v-model="note.content" :defaultOpen="edit"/>
       </div>
     </div>
     <Footer></Footer>
@@ -33,9 +33,15 @@
           content: "",
           pubtime: ""
         },
-        editor: null
+        preview:"preview"
       }
     },
+    // props:{
+    //   defaultOpen:{
+    //     type: String,
+    //     default: preview
+    //   }
+    // },
     mounted() {
       // 发送get请求, 取到笔记文章详情, title / content / pubtime
       let id = this.$route.params.id
@@ -48,8 +54,6 @@
           this.note = res.data.data
           console.log(this.note)
         })
-
-
     },
 
     components: {

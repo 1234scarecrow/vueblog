@@ -2,7 +2,7 @@
   <div class="jotting">
     <h1 class="title crumbs">
       <router-link to="jotting">随笔</router-link>
-      <router-link to="jotting" class="iconfont">&#xe6f5;</router-link>
+      <router-link to="jotting" class="iconfont" :class="icondisplay">&#xe6f5;</router-link>
     </h1>
     <div v-for="jotting in jottings" :key="jotting.jid" class="artcell">
       <router-link :to="'/jotting/'+jotting.jid">{{jotting.title}}</router-link>
@@ -17,7 +17,14 @@
       return {
         jottings: [
           { jid: 0, title: "", pub_time: "" }
-        ]
+        ],
+        icondisplay:false
+      }
+    },
+    props:{
+      icondisplay:{
+        type:String,
+        default:"true"
       }
     },
     mounted() {
@@ -31,3 +38,12 @@
     }
   }
 </script>
+
+<style>
+  .true{
+    display: inline-block;
+  }
+  .false{
+    display: none;
+  }
+</style>

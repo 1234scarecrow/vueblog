@@ -2,8 +2,8 @@
   <div class="collect">
     <h1 class="title crumbs">
       <router-link to="collect">收藏</router-link>
-      <span>&nbsp;-&nbsp;</span>
-      <router-link to="collect"></router-link>
+      <!-- <span>&nbsp;-&nbsp;</span> -->
+      <router-link to="collect" class="iconfont" v-if="icondisplay">&#xe6f5;</router-link>
     </h1>
     <div v-for="collect in collects" :key="collect.cid" class="artcell">
       <a :href="collect.curl" target="_blank">{{collect.title}}</a>

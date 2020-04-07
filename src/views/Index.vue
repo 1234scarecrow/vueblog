@@ -22,7 +22,7 @@
               <span>{{note.pub_time}}</span>
             </div>
           </div> -->
-          <Noteitems></Noteitems>
+          <Noteitems icondisplay="true"></Noteitems>
           <!-- 随笔 -->
           <!-- <div class="jotting">
             <h1 class="title">
@@ -34,7 +34,7 @@
               <span>{{jotting.pub_time}}</span>
             </div>
           </div> -->
-          <Jottingitems></Jottingitems>
+          <Jottingitems icondisplay="true"></Jottingitems>
           <!-- 收藏 -->
           <!-- <div class="collect">
             <h1 class="title">
@@ -92,7 +92,7 @@
       return {
         collects: [
           { cid: 0, title: "", curl: "" }
-        ],
+        ]
         // notes: [
         //   { nid: 0, title: "", pub_time: "" }
         // ],
@@ -276,7 +276,7 @@
     line-height: 21px;
   }
   
-  .title a:-webkit-any-link {
+  .title a:-webkit-any-link,.title a {
     color: #92b6d5;
     font-size: 14px;
     font-weight: bold;

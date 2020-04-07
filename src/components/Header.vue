@@ -2,7 +2,7 @@
   <div class="header">
     <div class="main headerContent">
       <router-link to="/">
-        <img src="" alt="logo">
+        <img src="../assets/images/logo2.png" alt="logo">
       </router-link>
       <ul>
         <li>
@@ -58,5 +58,9 @@
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+  }
+  .headerContent img{
+    height: 50px;
+    margin: 15px 15px 0;
   }
 </style>

@@ -18,7 +18,8 @@ import "./assets/css/common.css"
 Vue.config.productionTip = false
 
 /** axios配置 */
-axios.defaults.baseURL = 'http://192.168.31.200:8081'
+axios.defaults.baseURL = 'http://192.168.31.200:8081'  // 本地服务器连接
+// axios.defaults.baseURL = 'http://45.76.151.126:8081'
 axios.defaults.withCredentials = true  // Axios每次请求都携带身份认证信息 connect.sid
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'  // 修改所有的post请求默认头部
 Vue.prototype.$http = axios  // 把axios工具声明为Vue的实例的自定义成员

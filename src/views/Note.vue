@@ -14,7 +14,7 @@
           <span>{{note.pub_time}}</span>
         </div>
       </div> -->
-      <Noteitems></Noteitems>
+      <Noteitems icondisplay="false"></Noteitems>
     </div>
     <Footer></Footer>
   </div>

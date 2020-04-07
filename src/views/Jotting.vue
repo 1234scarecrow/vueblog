@@ -13,7 +13,7 @@
           <span>{{jotting.pub_time}}</span>
         </div>
       </div> -->
-      <Jottingitems></Jottingitems>
+      <Jottingitems icondisplay="false"></Jottingitems>
     </div>
     <Footer></Footer>
   </div>
