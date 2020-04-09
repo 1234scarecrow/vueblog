@@ -34,7 +34,7 @@
         .then(res => {
           console.log("笔记内容")
           console.log(res.data.data)
-          this.notes = res.data.data
+          this.notes = res.data.data.reverse()
         })
     }
   }

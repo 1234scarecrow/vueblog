@@ -231,10 +231,10 @@
     flex-wrap: nowrap;
   }
 
-  .content>.left,
+  /* .content>.left,
   .content>.right {
-    /* padding: 15px; */
-  }
+    padding: 15px;
+  } */
 
   .content>.left {
     width: 58%;

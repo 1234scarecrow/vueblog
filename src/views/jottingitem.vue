@@ -3,7 +3,16 @@
     <Header></Header>
     <div class="main">
       <Banner bgclass="jotting_bg"></Banner>
-      
+      <!-- 面包屑导航 -->
+      <h1 class="title crumbs">
+        <router-link to="/">首页 -</router-link>
+        <router-link to="/jotting"> 随笔</router-link>
+      </h1>
+      <!-- 内容 -->
+      <p class="articletitle">{{jotting.title}}</p>
+      <div id="article">
+        <mavon-editor v-model="jotting.content"></mavon-editor>
+      </div>
     </div>
     <Footer></Footer>
   </div>
@@ -44,3 +53,10 @@
     }
   }
 </script>
+<style>
+  .articletitle{
+    font-size: 24px;
+    margin: 10px 0;
+    color: #15456e;
+  }
+</style>

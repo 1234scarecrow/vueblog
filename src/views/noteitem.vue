@@ -10,7 +10,7 @@
         <router-link to="/note"> 笔记</router-link>
       </h1>
       <!-- 内容 -->
-      <p>{{note.title}}</p>
+      <p class="articletitle">{{note.title}}</p>
       <div id="article">
         <mavon-editor v-model="note.content" :defaultOpen="edit"/>
       </div>
@@ -63,3 +63,10 @@
     }
   }
 </script>
+<style>
+  .articletitle{
+    font-size: 24px;
+    margin: 10px 0;
+    color: #15456e;
+  }
+</style>

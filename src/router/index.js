@@ -15,11 +15,6 @@ const routes = [
     }
   },
   // 以下为懒加载
-  // {
-  //   path: '/home',
-  //   name: 'home',
-  //   component: () => import('../views/Home.vue')
-  // },
   {
     path: '/note',
     component: () => import('../views/Note.vue'),
@@ -60,6 +55,13 @@ const routes = [
     component: () => import('../views/Addnote.vue'),
     meta: {
       title: '1234稻草人-添加笔记'
+    }
+  },
+  {
+    path: '/addjotting',
+    component: () => import('../views/Addjotting.vue'),
+    meta: {
+      title: '1234稻草人-添加随笔'
     }
   },
   {
