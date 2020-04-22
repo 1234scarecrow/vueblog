@@ -9,7 +9,7 @@
         <input type="text" placeholder="请输入标题" v-model="title">
         <!-- <span>{{title}}</span><br><br>
         <textarea name="" id="" cols="30" rows="10" placeholder="请输入内容" v-model="content"></textarea> -->
-        <mavon-editor v-model="content"></mavon-editor>
+        <mavon-editor v-model="content" boxShadowStyle="0 2px 12px 0 #15456e33"></mavon-editor>
         <button @click="addNote"><span>提交 </span></button>
       </div>
     </div>

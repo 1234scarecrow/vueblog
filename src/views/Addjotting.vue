@@ -9,7 +9,7 @@
       <!-- 文章区域 -->
       <div id="article" class="article">
         <input type="text" placeholder="请输入标题" v-model="title">
-        <mavon-editor v-model="content"></mavon-editor>
+        <mavon-editor v-model="content" boxShadowStyle="0 2px 12px 0 #15456e33"></mavon-editor>
         <button @click="addJotting">提交</button>
       </div>
     </div>

@@ -93,6 +93,24 @@ const routes = [
     meta:{
       title:'1234稻草人-随笔'
     }
+  },
+
+  // 登录页面
+  {
+    path: '/login',
+    component:()=>import('../views/login.vue'),
+    meta:{
+      title:'1234稻草人-登录'
+    }
+  },
+
+  // 练习用页面
+  {
+    path: '/practice',
+    component:()=>import('../views/prac.vue'),
+    meta:{
+      title:'1234稻草人-练习'
+    }
   }
 ]
 

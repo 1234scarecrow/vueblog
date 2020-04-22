@@ -11,7 +11,14 @@
       <!-- 内容 -->
       <p class="articletitle">{{jotting.title}}</p>
       <div id="article">
-        <mavon-editor v-model="jotting.content"></mavon-editor>
+        <mavon-editor 
+          v-model="jotting.content"
+          :subfield="false" 
+          :toolbars="toolbars" 
+          defaultOpen="preview" 
+          :toolbarsFlag="false"
+          boxShadowStyle="0 2px 12px 0 #15456e33"
+        ></mavon-editor>
       </div>
     </div>
     <Footer></Footer>
